@@ -1,0 +1,38 @@
+/* Team  Socials */
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social__icon {
+    fill: currentColor;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    color: #afb1b8;
+
+    transition: color 250ms var(--cubic-bz),
+        background-color 250ms var(--cubic-bz);
+
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+        background: var(--premary-color);
+        color: var(--white-color);
+    
+        border-radius: 50%;
+    }
+}
+
+

@@ -1,0 +1,18 @@
+.subscribe-form__btn,
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--white-color);
+    background-color: var(--premary-color);
+
+    cursor: pointer;
+
+    box-shadow: 0px 4px 4px var(--border-btn-cl);
+    border-radius: 4px;
+    border: none;
+
+    padding: 10px 32px;
+}

@@ -1,0 +1,38 @@
+.join-group {
+    margin-right: 93px;
+
+    &__title {
+        color: var(--white-color);
+        margin-bottom: 20px;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    
+    }
+}
+
+.join-group__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--footer-scl-cl);
+    border-radius: 50%;
+
+    transition: background-color 250ms var(--cubic-bz);
+
+    &:hover,
+    &:focus {
+        background: var(--premary-color);
+        color: var(--white-color);
+    
+        border-radius: 50%;
+    }
+}
