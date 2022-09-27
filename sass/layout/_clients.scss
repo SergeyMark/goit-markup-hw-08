@@ -1,6 +1,19 @@
 .clients{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+}
+
+.clients__item{
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px * 2) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px) / 7);
+    }
 }
 
 .clients__link {
@@ -8,7 +21,6 @@
     justify-content: center;
     align-items: center;
 
-    width: 170px;
     height: 92px;
 
     border: 1px solid var(--border-client);
@@ -23,6 +35,10 @@
     &:focus {
         border: 1px solid var(--premary-color);
         color: var(--premary-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
     }
 }
 

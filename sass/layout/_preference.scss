@@ -4,10 +4,15 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 
     color: var(--heading-color);
 
     margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .preference__text {
@@ -18,12 +23,35 @@
 }
 
 .preference{
-    display: flex;
-    gap: 30px;
+
+     @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
 }
 
 .preference__item {
-    flex-basis: 270px;
+
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .preference__item:not(:last-child){
+        margin-bottom: 0;
+    }
 }
 
 /* SVG ICON Preference */

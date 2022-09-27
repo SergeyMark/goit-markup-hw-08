@@ -18,6 +18,7 @@
 
     @media screen and (min-width: 1200px) {
         flex-grow: 1;
+        margin-bottom: 0;
     }
 }
 
@@ -27,6 +28,11 @@
     text-align: center;
 
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        text-align: left;
+    }
 }
 
 .footer-address__item {
@@ -35,6 +41,10 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
     }
 }
 
@@ -69,6 +79,7 @@
 // Join Group
 
 .join-group {
+    text-transform: uppercase;
 
     margin-bottom: 60px;
 
@@ -77,6 +88,11 @@
 
         color: var(--white-color);
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            margin-bottom: 20px;
+        }
     }
 
     &__list {
@@ -123,6 +139,12 @@
         justify-content: center;
         gap: 165px;
     }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        flex-grow: 1;
+    }
 }
 
 // Footer Form
@@ -134,8 +156,9 @@
     align-items: center;
     
     @media screen and (min-width: 1200px) {
-        display: flex;
         align-items: center;
+        flex-direction: row;
+        justify-content: center;
         gap: 12px;    
     }
 }
@@ -146,23 +169,26 @@
 
     color: var(--white-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .subscribe-form__wrap {
     width: 100%;
-
     margin-bottom: 20px;
     
     @media screen and (min-width: 1200px) {
         // display: flex;
         // flex-direction: column;
+        margin-bottom: 0;
     }
 }
 
 .subscribe-form__input {
     width: 100%;
-
-    padding: 16px 0px 16px 16px;
+    padding: 16px 260px 16px 16px;
 
     background-color: transparent;
 
@@ -178,6 +204,7 @@
         }
 
     @media screen and (min-width: 1200px) {
+        max-width: 358px;
         padding: 16px 295px 16px 16px;
     }
 }
