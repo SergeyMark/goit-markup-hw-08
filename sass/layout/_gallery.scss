@@ -1,11 +1,11 @@
 .gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 30px;
 }
 
 .gallery-list__item {
-    flex-basis: calc((100% - 60px) / 3);
+    // flex-basis: calc((100% - 60px) / 3);
     width: 370px;
 }
 
