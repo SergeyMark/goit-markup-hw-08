@@ -23,40 +23,51 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="">Web<span class="logo__dark">Studio</span></a>
-        <nav class="nav-menu header__nav-menu">
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студія</a>
-            </li>
-            <li class="site-nav__item">
-              <a
-                class="site-nav__link site-nav__link--active"
-                href="./portfolio.html"
-                >Портфоліо</a
+        <div class="container__mobile">
+          <nav class="nav-menu header__nav-menu">
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./index.html">Студія</a>
+              </li>
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link site-nav__link--active"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contats header__contats">
+            <li class="contats__item">
+              <a class="contats__link" href="mailto:info@devstudio.com">
+                <svg class="contats__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
               >
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">Контакти</a>
+            <li class="contats__item">
+              <a class="contats__link" href="tel:+380961111111"
+                ><svg class="contats__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-
-        <ul class="contats header__contats">
-          <li class="contats__item">
-            <a class="contats__link" href="mailto:info@devstudio.com">
-              <svg class="contats__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contats__item">
-            <a class="contats__link" href="tel:+380961111111"
-              ><svg class="contats__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <button
+          class="btn-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="btn-toggle__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-toggle-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -332,85 +343,87 @@
     <!-- foooter -->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="address-wrap">
-          <a class="address-wrap__logo logo" href=""
-            >Web<span class="logo__light">Studio</span></a
-          >
-          <address class="footer-address footer-address--indent">
-            <ul class="footer-address__list">
-              <li class="footer-address__item">
+        <div class="footer-tablet-wrap">
+          <div class="address-wrap">
+            <a class="address-wrap__logo logo" href=""
+              >Web<span class="logo__light">Studio</span></a
+            >
+            <address class="footer-address footer-address--indent">
+              <ul class="footer-address__list">
+                <li class="footer-address__item">
+                  <a
+                    class="footer-address__link footer-address__link--white"
+                    href="https://goo.gl/maps/NG6mRqcDs6EhL1nE7"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="footer-address__item">
+                  <a class="footer-address__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a class="footer-address__link" href="tel:+38 096 111 11 11"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join-group">
+            <h3 class="join-group__title preference-title">приєднуйтесь</h3>
+            <ul class="join-group__list">
+              <li class="join-group__item">
                 <a
-                  class="footer-address__link footer-address__link--white"
-                  href="https://goo.gl/maps/NG6mRqcDs6EhL1nE7"
+                  class="join-group__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  м. Київ, пр-т Лесі Українки, 26
+                  <svg class="join-group__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-f-1"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer-address__item">
-                <a class="footer-address__link" href="mailto:info@example.com"
-                  >info@example.com</a
+              <li class="join-group__item">
+                <a
+                  class="join-group__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="join-group__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-f-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-address__item">
-                <a class="footer-address__link" href="tel:+38 096 111 11 11"
-                  >+38 099 111 11 11</a
+              <li class="join-group__item">
+                <a
+                  class="join-group__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="join-group__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-f-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-group__item">
+                <a
+                  class="join-group__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="join-group__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-f-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join-group">
-          <h3 class="join-group__title preference-title">приєднуйтесь</h3>
-          <ul class="join-group__list">
-            <li class="join-group__item">
-              <a
-                class="join-group__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="join-group__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram-f-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-group__item">
-              <a
-                class="join-group__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="join-group__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter-f-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-group__item">
-              <a
-                class="join-group__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="join-group__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook-f-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-group__item">
-              <a
-                class="join-group__link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="join-group__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin-f-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe-group">
           <h3 class="subscribe-group__title preference-title">
