@@ -24,8 +24,8 @@
 
     padding: 40px;
 
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    min-height: 581px;
 
     transform: translate(-50%, -50%);
 
@@ -33,6 +33,10 @@
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .modal-form__title {
@@ -40,7 +44,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -48,6 +52,10 @@
     margin-bottom: 12px;
 
     color: var(--heading-color);
+
+    @media screen and (min-width: 1200px) {
+        line-height: calc(23 / 20);
+    }
 }
 
 .modal-form__btn {
