@@ -44,7 +44,16 @@
     }
 
     @media screen and (min-width: 768px) {
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .preference__item{
         flex-basis: calc((100% - 30px) / 2);
+    }
+    .preference__item:not(:last-child) {
+        margin-bottom: 0;
     }
 }
 

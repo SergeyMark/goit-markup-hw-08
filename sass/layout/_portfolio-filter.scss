@@ -11,17 +11,21 @@
         justify-content: center;
         gap: 8px;
 
+        margin-bottom: 30px;
+    }
+
+     @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
     }
 }
 
-.filter-wrap .filter-wrap__item {
-    margin-right: 8px;
-}
+// .filter-wrap .filter-wrap__item {
+//     margin-right: 8px;
+// }
 
-.filter-wrap .filter-wrap__item:last-child {
-    margin-right: 0; 
-}       
+// .filter-wrap .filter-wrap__item:last-child {
+//     margin-right: 0; 
+// }       
         
 .filter-wrap__btn {
     display: inline-block;
